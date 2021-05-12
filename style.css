@@ -1,0 +1,277 @@
+html, body {
+    background-color: #0b0c0d;
+    font-family: 'Inter', sans-serif;
+}
+
+/* LOADER */
+
+
+
+
+  .loader {
+    width: 100%;
+    height: 100%;
+    background-color: #0B0C0D;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: loader 0.5s 2.2s ease-in forwards;
+    z-index: 99;
+  }
+  .progress-bar {
+    width: 200px;
+    height: 2px;
+    background-color: #9A9A9A;
+    position: relative;
+    top: calc(50% - 1px);
+    left: calc(50% - 100px);
+  }
+  .progress-bar:before {
+    content: '';
+    display: block;
+    width: 8px;
+    height: 5px;
+    position: absolute;
+    animation: progress 2s ease-in-out forwards;
+  }
+  
+  @keyframes loader {
+    to {left: -100vw;}
+  }
+  @keyframes progress {
+    to {
+      border-left: 200px solid violet;
+    }
+  }
+
+/* FINE LOADER */
+
+                /* NAVBAR */
+.navbar {
+    padding-top: 40px;
+}
+.navbar-brand {
+    color: #AAB2BD;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    font-style: 20;
+}
+.navbar-brand:hover {
+    color: violet;
+}
+.nav-item a:hover {
+    color: violet;
+}
+
+
+.nav-item a{
+    text-decoration: none;
+    color: #59616A;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 17px;
+}
+
+ .navbar-toggler {
+    color: #F5F7FA;
+
+}
+
+
+                /* HERO-SECTION */
+
+ .immagine {
+    margin-top: 20px;
+    width: 700px; 
+} 
+
+.paragrafo {
+    font-size: 14px;
+    color: #F5F7FA;
+    font-weight: 200px;
+    line-height: 27px;
+    font-style: normal;
+
+}
+
+                /* SKILLS */
+
+.paragrafo-stile {
+    font-size: 18px;  
+}
+
+/* #skrill-scesa {
+    color: #59616A; 
+    padding-top: 60px;
+    font-size: 24px;
+    font-family: 'inter';
+} */
+
+             /* PORTFOLIO */
+
+.portfolio-scritta {
+    color:  #59616A; 
+    font-size: 26px;
+    padding-top: 5%;
+}
+
+.card-body {
+    background-color: #0b0c0d;
+    
+}
+
+.card-title {
+    color: #59616A; 
+    font-size: 14px;
+}
+
+.card {
+    border: none;
+
+}
+
+.bottone {
+    color: #AAB2BD;
+    border: 2px solid #59616A;
+    padding: 5px;
+    border-radius: 10%;
+}
+
+.bottone:hover {
+    color: #59616A;
+    border: 2px solid #AAB2BD;
+}
+
+.skills-container .cms-text{
+  color: #59616A;
+}
+
+                /* CONTACTS */
+
+.scritta-contatto {
+    color: #AAB2BD;
+    font-size: 16px;
+}
+
+.ultimo-paragrafo a {
+    font-size: 16px;
+    color: #AAB2BD;
+    text-decoration: a;
+}
+
+.ultimo-paragrafo a:hover {
+  color: violet;
+}
+
+
+.line {
+    height: 2px;
+    background-color:rgb(206,206,206);
+    width:100%;
+    opacity: 0.2;
+}
+
+.loghi-social a {
+    text-decoration: none;
+    color: #AAB2BD;
+}
+
+.loghi-social a:hover {
+    color: violet;
+}
+
+/* IMAGE SLIDER */
+
+body {
+    margin: 0px;
+  }
+  
+  h2 {
+    font-family: helvetica, sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    color: #59616A;
+    width: 100%;
+    text-align: center;
+    margin: 0px;
+    letter-spacing: 3px;
+    -webkit-font-smoothing: antialiased;
+    font-weight: normal !important;
+  }
+  
+  .big-container{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  
+  .container-slider{
+    position: relative;
+    width: 50%;
+    height: 100vh;
+  }
+  
+  .container-slider:nth-child(2){
+      pointer-events: none;
+  }
+  
+ 
+
+
+                /* MEDIA-QUERY */
+
+@media (max-width: 576px) {
+    .immagine {
+        display: none;
+    }
+    .paragrafo {
+        margin-top: 50px;
+    }
+
+    .socialnetowrks {
+        padding-top: 30px;
+    }
+
+}
+
+@media (min-width: 992px) {
+    .paragrafo {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+   
+}
+
+@media screen and (max-width: 768px){
+  .container-slider{
+    position:fixed;
+    width: 100%;
+  }
+  .container-slider:nth-child(2){
+    background-color: transparent !important;
+  }
+  .container-slider h2{
+    color: black;
+    font-size: 14px;
+    top: inherit;
+    bottom: 30px;
+    -webkit-transform: translate(-50%,0%);
+    -ms-transform: translate(-50%,0%);
+    transform: translate(-50%,0%);
+  }
+}
+
+
+
+
+
+
